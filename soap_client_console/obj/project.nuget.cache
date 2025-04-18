@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "dgSpecHash": "yBf3t6fYs2w=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\boost\\RiderProjects\\WebServiceProgRozpr\\soap_client_console\\soap_client_console.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\boost\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.0-preview.3.25171.5\\microsoft.extensions.configuration.10.0.0-preview.3.25171.5.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.0-preview.3.25171.5\\microsoft.extensions.configuration.abstractions.10.0.0-preview.3.25171.5.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\10.0.0-preview.3.25171.5\\microsoft.extensions.configuration.fileextensions.10.0.0-preview.3.25171.5.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\microsoft.extensions.configuration.json\\10.0.0-preview.3.25171.5\\microsoft.extensions.configuration.json.10.0.0-preview.3.25171.5.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\10.0.0-preview.3.25171.5\\microsoft.extensions.fileproviders.abstractions.10.0.0-preview.3.25171.5.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\10.0.0-preview.3.25171.5\\microsoft.extensions.fileproviders.physical.10.0.0-preview.3.25171.5.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\10.0.0-preview.3.25171.5\\microsoft.extensions.filesystemglobbing.10.0.0-preview.3.25171.5.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\microsoft.extensions.objectpool\\8.0.10\\microsoft.extensions.objectpool.8.0.10.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.0-preview.3.25171.5\\microsoft.extensions.primitives.10.0.0-preview.3.25171.5.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\soapcore\\1.2.1.6\\soapcore.1.2.1.6.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\system.codedom\\9.0.2\\system.codedom.9.0.2.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\system.io.pipelines\\10.0.0-preview.3.25171.5\\system.io.pipelines.10.0.0-preview.3.25171.5.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.1\\system.security.cryptography.pkcs.8.0.1.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\system.security.cryptography.xml\\8.0.2\\system.security.cryptography.xml.8.0.2.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\system.servicemodel.http\\8.1.2\\system.servicemodel.http.8.1.2.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\system.servicemodel.netframingbase\\8.1.2\\system.servicemodel.netframingbase.8.1.2.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\system.servicemodel.nettcp\\8.1.2\\system.servicemodel.nettcp.8.1.2.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\system.servicemodel.primitives\\8.1.2\\system.servicemodel.primitives.8.1.2.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\system.text.encodings.web\\10.0.0-preview.3.25171.5\\system.text.encodings.web.10.0.0-preview.3.25171.5.nupkg.sha512",
+    "C:\\Users\\boost\\.nuget\\packages\\system.text.json\\10.0.0-preview.3.25171.5\\system.text.json.10.0.0-preview.3.25171.5.nupkg.sha512"
+  ],
+  "logs": []
+}

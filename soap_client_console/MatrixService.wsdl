@@ -1,0 +1,124 @@
+<wsdl:definitions targetNamespace="http://tempuri.org/" name="IMatrixMultiplyService">
+    <wsdl:types>
+        <xsd:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+            <xsd:element name="Multiply">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element minOccurs="0" maxOccurs="1" name="filename1" type="xsd:string"/>
+                        <xsd:element minOccurs="0" maxOccurs="1" name="filename2" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="MultiplyResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element minOccurs="0" maxOccurs="1" name="MultiplyResult" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="SaveToFile">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element minOccurs="0" maxOccurs="1" name="matrix" nillable="true" type="tns:ArrayOfArrayOfFloat"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="SaveToFileResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element minOccurs="0" maxOccurs="1" name="SaveToFileResult" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="ReadMatrix">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element minOccurs="0" maxOccurs="1" name="filename" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="ReadMatrixResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element minOccurs="0" maxOccurs="1" name="ReadMatrixResult" nillable="true" type="tns:ArrayOfArrayOfFloat"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:complexType name="ArrayOfArrayOfFloat">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" maxOccurs="unbounded" nillable="true" name="ArrayOfFloat" type="tns:ArrayOfFloat"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ArrayOfFloat">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" maxOccurs="unbounded" name="float" type="xsd:float"/>
+                </xsd:sequence>
+            </xsd:complexType>
+        </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="IMatrixMultiplyService_Multiply_InputMessage">
+        <wsdl:part name="parameters" element="tns:Multiply"/>
+    </wsdl:message>
+    <wsdl:message name="IMatrixMultiplyService_Multiply_OutputMessage">
+        <wsdl:part name="parameters" element="tns:MultiplyResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IMatrixMultiplyService_SaveToFile_InputMessage">
+        <wsdl:part name="parameters" element="tns:SaveToFile"/>
+    </wsdl:message>
+    <wsdl:message name="IMatrixMultiplyService_SaveToFile_OutputMessage">
+        <wsdl:part name="parameters" element="tns:SaveToFileResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IMatrixMultiplyService_ReadMatrix_InputMessage">
+        <wsdl:part name="parameters" element="tns:ReadMatrix"/>
+    </wsdl:message>
+    <wsdl:message name="IMatrixMultiplyService_ReadMatrix_OutputMessage">
+        <wsdl:part name="parameters" element="tns:ReadMatrixResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="IMatrixMultiplyService">
+        <wsdl:operation name="Multiply">
+            <wsdl:input message="tns:IMatrixMultiplyService_Multiply_InputMessage"/>
+            <wsdl:output message="tns:IMatrixMultiplyService_Multiply_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="SaveToFile">
+            <wsdl:input message="tns:IMatrixMultiplyService_SaveToFile_InputMessage"/>
+            <wsdl:output message="tns:IMatrixMultiplyService_SaveToFile_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="ReadMatrix">
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="BasicHttpBinding_IMatrixMultiplyService_soap" type="tns:IMatrixMultiplyService">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="Multiply">
+            <soap:operation soapAction="http://tempuri.org/IMatrixMultiplyService/Multiply" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="SaveToFile">
+            <soap:operation soapAction="http://tempuri.org/IMatrixMultiplyService/SaveToFile" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="ReadMatrix">
+            <soap:operation soapAction="http://tempuri.org/IMatrixMultiplyService/ReadMatrix" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="IMatrixMultiplyService">
+        <wsdl:port name="BasicHttpBinding_IMatrixMultiplyService_soap" binding="tns:BasicHttpBinding_IMatrixMultiplyService_soap">
+            <soap:address location="http://localhost:5097/MatrixService.asmx"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,6 @@
+﻿services:
+  webserviceprogrozpr:
+    image: webserviceprogrozpr
+    build:
+      context: .
+      dockerfile: WebServiceProgRozpr/Dockerfile
